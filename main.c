@@ -40,8 +40,6 @@ BOOL CALLBACK EnumWindowsProc(
             Sleep(random() % 100);
             if (lParam == 0) {
               typeString(hwnd, "/camp");
-            } else {
-              typeString(hwnd, "/dance");
             }
             SendMessage(hwnd, WM_KEYDOWN, VK_RETURN, 0);
             Sleep(random() % 100);
